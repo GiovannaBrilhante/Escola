@@ -7,6 +7,8 @@ export default function CompControlado() {
     function leNome(evento){
         //console.log(evento.target.value)
         setNome(evento.target.value)
+        //evento - destino - valor ; o que o usuario digitou no campo que aconteceu o evento
+        //guardando essa info em uma variavel de estado
     }
 
     function exibeNome() {
@@ -18,8 +20,12 @@ export default function CompControlado() {
             <h1>Exemplo Componente Controlado</h1>
             <label>
                 Nome:
-                <input type="text" onChange={leNome}/>
+                <input type="text" value={nome} onChange={leNome}/> 
+                <button onClick={exibeNome}>Exibe</button>
             </label>
         </div>
     )
 }
+
+//função com parenteses é executada naquele momento
+// sem vai receber como parametro as infos relacionadas a ação 
