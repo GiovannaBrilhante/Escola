@@ -27,7 +27,7 @@ namespace ProjetoEscola_API.Controllers
         public ActionResult<List<Curso>> Get(int CursoId)
         {
             try{
-                var result = _context.Aluno.Find(CursoId);
+                var result = _context.Curso.Find(CursoId);
                 if(result == null)
                 {
                     return NotFound();
@@ -59,7 +59,7 @@ namespace ProjetoEscola_API.Controllers
             return BadRequest();
         }
 
-        [HttpDelete("{AlunoId}")]
+        [HttpDelete("{CursoId}")]
         public async Task<ActionResult> delete(int CursoId)
         {
             try{
