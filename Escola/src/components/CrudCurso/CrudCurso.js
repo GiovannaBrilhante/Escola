@@ -70,7 +70,6 @@ export default function CrudCurso(props) {
 
     const renderForm = ()=> {
         return (
-
             <div className="inclui-container">
                 <label> Código do Curso: </label>
                 <input
