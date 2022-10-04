@@ -65,23 +65,3 @@ input[type=text] {
     .tituloCadastro {
     margin-left: 30px;
     }
-    .btnSalvar {
-    background-color: lightblue;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px 5px 5px 30px;
-    }
-    .btnCancelar{
-
-    background-color: gainsboro;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 5px;
-    }
-    label {
-    padding: 10px;
-    }

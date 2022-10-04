@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import React, { Component } from 'react';
 import axios from 'axios';
 import './CrudCurso.css';
-const title = "cadastro de cursos";
+const title = "Cadastro de Cursos";
 const urlAPI = "http://localhost:5258/api/curso";//"http://localhost:7250/api/curso";
 const initialState = {
     curso: { id: 0, codCurso: 0, nomeCurso: '', periodo: '' },
@@ -107,11 +107,11 @@ export default function CrudCurso(props) {
                     value={curso.periodo}
                     onChange={e => atualizaCampo(e)}
                 />
-                <button className="btnSalvar"
+                <button className="btnSalvarCurso"
                     onClick={e => salvar(e)} >
                     Salvar
                 </button>
-                <button className="btnCancelar"
+                <button className="btnCancelarCurso"
                     onClick={e => limpar(e)} >
                     Cancelar
                 </button>
@@ -124,10 +124,10 @@ export default function CrudCurso(props) {
             <div className="listagem">
                 <table className="listaCursos" id="tblistaCursos">
                     <thead>
-                        <tr className="cabecTabela">
-                            <th className="tabTituloCodCurso">codCurso</th>
-                            <th className="tabTituloNomeCurso">nomeCurso</th>
-                            <th className="tabTituloPeriodo">periodo</th>
+                        <tr className="cabecTabelaCurso">
+                            <th className="tabTituloCodCurso">Cod Curso</th>
+                            <th className="tabTituloNomeCurso">Nome Curso</th>
+                            <th className="tabTituloPeriodo">Periodo</th>
                             <th className="tabTituloAlterar">Alterar</th>
                             <th className="tabTituloRemover">Remover</th>
                         </tr>
