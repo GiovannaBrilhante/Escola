@@ -22,7 +22,7 @@ export default function CrudCurso(props) {
     }, [curso]);
 
     const limpar = () => {
-        setCurso({ curso: initialState.curso });
+        setCurso( initialState.curso );
     }
     
     const salvar = () => {
@@ -33,7 +33,8 @@ export default function CrudCurso(props) {
         axios[metodo](url, cursos)
             .then(resp => {
                 const lista = getListaAtualizada(resp.data)
-                setCurso({ curso: initialState.curso, lista })
+                setCurso(initialState.curso)
+                setLista(lista)
             })
     }
 
