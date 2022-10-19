@@ -9,7 +9,7 @@ namespace ProjetoEscola_API.Models
         [Range(2,99)]
         public int codCurso{get;set;}
 
-        [Required(ErrorMessage="O campo nomeCurso é obrigatório",AllowEmptyStrings=false)]
+        [Required(ErrorMessage="O campo nome do curso é obrigatório",AllowEmptyStrings=false)]
         [StringLength(30)]
         public string? nomeCurso{get;set;}
 
