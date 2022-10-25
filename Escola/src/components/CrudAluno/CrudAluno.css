@@ -14,18 +14,18 @@
     text-align: left;
 }
 
-th, td{
-    padding: 10px;
-}
+.card{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
 
-.tabTituloRa{
-    width: 100px;
+    padding: 2px 2px  2px  2px ;
+    box-shadow: 15px 15px 15px 15px solid #000000;
+    border: solid 1px;
 }
-
-.tabTituloNome{
-    width: 400px;
-}
-
 input[type=text] {
     display: inline-block;
     width: 20%;
